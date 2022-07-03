@@ -3,7 +3,7 @@ dotenv.config();
 import { MongoClient } from 'mongodb';
 //const uri = process.env['MONGODB_URI'];
 const uri =
-	'mongodb+srv://MongoUser:<53uf0Ztdna59JiDX>@rawwavecluster.avooy.mongodb.net/?retryWrites=true&w=majority';
+	'mongodb+srv://MongoUser:<Password>@rawwavecluster.avooy.mongodb.net/?retryWrites=true&w=majority';
 
 const options = {
 	useUnifiedTopology: true,

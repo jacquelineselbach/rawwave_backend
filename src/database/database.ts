@@ -1,5 +1,5 @@
 import * as Mongoose from "mongoose";
-import { UserModel } from "./users/users.model";
+import { UserModel } from "./models/users.model";
 
 let database: Mongoose.Connection;
 

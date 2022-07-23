@@ -1,6 +1,6 @@
 import * as Mongoose from "mongoose";
-import UserSchema from "./users.schema";
-import { IUserDocument, IUserModel } from "./users.types";
+import UserSchema from "../schemas/users.schema";
+import { IUserDocument, IUserModel } from "../users/users.types";
 
 export const UserModel = Mongoose.model<IUserDocument>(
   "user",

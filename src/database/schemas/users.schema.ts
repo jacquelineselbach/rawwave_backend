@@ -1,6 +1,6 @@
 import * as Mongoose from "mongoose";
-import { findOneOrCreate, findByAge } from "./users.statics";
-import { setLastUpdated, sameLastName } from "./users.methods";
+import { findOneOrCreate, findByAge } from "../users/users.statics";
+import { setLastUpdated, sameLastName } from "../methods/users.methods";
 
 const UserSchema = new Mongoose.Schema({
   firstName: String,

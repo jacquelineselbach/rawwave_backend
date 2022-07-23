@@ -2,26 +2,26 @@ import express, { Application } from "express";
 import bodyParser from "body-parser";
 
 import connect from "./connect";
-import { db } from "./config/config";
+import { DB } from "./config/config";
 import * as UserController from "./controllers/user.controllers";
 
 const app: Application = express();
 const port: number = 8080 || process.env.PORT;
 
-connect(db);
+connect(DB);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//app.get("/users", BookController.allUsers);
+//app.get("/users", UserController.allUsers);
 
-//app.get("/users/:id", BookController.showUsers);
+//app.get("/users/:id", UserController.showUsers);
 
-app.post("/users", UserController.addUser);
+app.post("/user", UserController.addUser);
 
-app.patch("/users/:id", UserController.updateUser);
+app.patch("/user/update/:id", UserController.updateUser);
 
-app.delete("/users/:id", UserController.deleteUser);
+app.delete("/user/delete/:id", UserController.deleteUser);
 
 app.listen(port, () => {
     console.log(`Server running on ${port}`);

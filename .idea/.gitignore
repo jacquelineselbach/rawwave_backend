@@ -58,6 +58,10 @@ web_modules/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
+/.idea/
+/node_modules/
+/src/database/config/
+
 
 # Optional REPL history
 .node_repl_history

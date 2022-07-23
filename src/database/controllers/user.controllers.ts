@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import User from "../models/user.model";
 
-//export const allBooks = (req: Request, res: Response) => {
+//export const allUsers = (req: Request, res: Response) => {
 //    const books = User.find((err: any, books: any) => {
 //        if (err) {
 //            res.send(err);
@@ -12,11 +12,11 @@ import User from "../models/user.model";
 //};
 
 //export const getUser = (req: Request, res: Response) => {
-//    const book = User.findById(req.params.id, (err: any, book: any) => {
+//    const user = User.findById(req.params.id, (err: any, book: any) => {
 //        if (err) {
 //            res.send(err);
 //        } else {
-//            res.send(book);
+//            res.send(user);
 //        }
 //    });
 //};

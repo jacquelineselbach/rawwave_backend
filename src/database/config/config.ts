@@ -1,1 +1,1 @@
-export const DB: string = "mongodb+srv://MongoUser:53uf0Ztdna59JiDX@rawwavecluster.avooy.mongodb.net/?retryWrites=true&w=majority";
+export const db: string = "<addString>";

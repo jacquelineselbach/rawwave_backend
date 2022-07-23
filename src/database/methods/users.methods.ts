@@ -11,3 +11,4 @@ export async function setLastUpdated(this: IUserDocument): Promise<void> {
 export async function sameLastName(this: IUserDocument): Promise<Document[]> {
   return this.model("user").find({ lastName: this.lastName });
 }
+

@@ -4,7 +4,6 @@ import { UserModel } from "./models/users.model";
 let database: Mongoose.Connection;
 
 export const connect = () => {
-  // add your own uri below
   const uri =
     "";
 

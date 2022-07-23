@@ -1,0 +1,35 @@
+{
+  "name": "rawwave_backend",
+  "version": "1.0.0",
+  "description": "WTP Project Jacqueline Selbach",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --inspect=5858 -r ts-node/register ./src/server.ts",
+    "dev": "nodemon",
+    "build": "tsc",
+    "script": "cd src/scripts && ts-node"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.6.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacquelineselbach/rawwave_backend.git"
+  },
+  "author": "Jacqueline Selbach | Assist by Mark Perov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacquelineselbach/rawwave_backend/issues"
+  },
+  "homepage": "https://github.com/jacquelineselbach/rawwave_backend#readme"
+}

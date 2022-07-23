@@ -39,7 +39,7 @@ export const updateUser = (req: Request, res: Response) => {
             if (err) {
                 res.send(err);
             } else {
-                res.send(user);
+                res.send(user + "Could not be updated" );
             }
         }
     );
@@ -50,7 +50,7 @@ export const deleteUser = (req: Request, res: Response) => {
         if (err) {
             res.send(err);
         } else {
-            res.send("Book deleted from database");
+            res.send("User deleted from database");
         }
     });
 };
